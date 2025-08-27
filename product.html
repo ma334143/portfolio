@@ -7,6 +7,11 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	<style>
+		ul.keyFeatures li p{
+			margin: 0;
+		}
+	</style>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -43,9 +48,91 @@
 									<p>A web application for automating export documentation processes. Helps businesses generate, track, and manage export invoices, packing lists, and related documents with accuracy.</p>
 								</header>
 								<div class="image main"><img src="images/pro013.jpg" alt="" /></div>
-								<p>"Developed a web-based solution for automating export documentation processes. The system generates and manages export-related documents such as Commercial Invoices, Packing Lists, and Certificates. It reduces manual errors, saves processing time, and improves compliance for export companies. This software is called Documents Generation Software."</p>
+								<h2>Overview</h2>
+								<p>The Export Documentation Solution is a custom-built web application developed to simplify and automate the preparation of export-related documents. The system is designed for exporters, freight forwarders, and trading companies who need accuracy, compliance, and speed in managing international trade documentation.</p>
 								<div class="row">
-									<div class="col-8 col-8-small">
+									
+									<div class="col-12 col-12-small">
+										<h2>Key Features</h2>
+										<ul class="keyFeatures">
+											<li>
+												<b>Commercial Invoice Generation</b>
+												<p>Dynamic invoice creation with buyer/seller details, HS codes, shipment terms, and currency support.</p>
+											</li>
+											<li><b>Packing List Auto-Creation</b><p>Packing lists generated automatically from shipment data with item quantities, weights, and volume.</p></li>
+											<li>
+												<b>Certificate Preparation (Form-E / COO / Others)</b>
+												<p>Automated preparation of required certificates such as Form-E, Certificate of Origin (COO), and others, reducing manual entry.</p>
+											</li>
+											<li>
+												<b>Multiple LC (Letter of Credit) Handling</b>
+												<p>Ability to manage multiple Letters of Credit under one platform, track conditions, and generate supporting documents.</p>
+											</li>
+											<li>
+												<b>Export Record Management</b>
+												<p>Secure database-driven storage of all export transactions. Includes search, filters, and reports for audits or compliance.</p>
+											</li>
+											<li>
+												<b>PDF Download & Print Options</b>
+												<p>One-click PDF generation of invoices, packing lists, and certificates, designed according to international export standards.</p>
+											</li>
+										</ul>
+									</div>
+
+									<div class="col-12 col-12-small">
+										<h2>Technical Implementation</h2>
+										<ul>
+											<li><b>Frontend : </b><span>HTML5, CSS3, JavaScript (jQuery for form validation and dynamic fields).</span></li>
+											<li><b>Backend : </b><span>PHP (Core PHP with MVC structure for maintainability).</span></li>
+											<li><b>Database : </b><span>MySQL (optimized for structured storage of export records and transactions).</span></li>
+											<li><b>Document Generation : </b><span>TCPDF / FPDF libraries for dynamic PDF export.</span></li>
+											<li><b>Authentication : </b><span>User login system with role-based access (Admin / Staff).</span></li>
+											<li><b>Deployment : </b><span>Hosted on cPanel-based shared hosting (Apache server).</span></li>
+										</ul>
+									</div>
+
+									<div class="col-12 col-12-small">
+										<h2>Benefits</h2>
+										<ul>
+											<li>Saves time by automating repetitive document preparation.</li>
+											<li>Reduces errors by pulling data directly from stored records.</li>
+											<li>Centralizes documentation in a secure and searchable system.</li>
+											<li>Provides professional, export-compliant PDFs ready for submission.</li>
+										</ul>
+									</div>
+									
+									<div class="col-12 col-12-small">
+										<h2>Challenges & Difficulties Faced</h2>
+										<ul>
+											<li><b>Complex Document Requirements</b></li>
+											<ol>
+												<li>Different export documents (Commercial Invoice, Form-E, COO) all had unique formats and mandatory fields.</li>
+												<li>Solution: Designed flexible templates and dynamic forms where data could be reused across documents.</li>
+											</ol>
+											<li><b>Handling Multiple LC (Letter of Credit) Rules</b></li>
+											<ol>
+												<li>Different export documents (Commercial Invoice, Form-E, COO) all had unique formats and mandatory fields.</li>
+												<li>Solution: Designed flexible templates and dynamic forms where data could be reused across documents.</li>
+											</ol>
+											<li><b>Accurate Data Mapping</b></li>
+											<ol>
+												<li>Linking product, shipment, and customer data across invoices, packing lists, and certificates without mismatches was tricky.</li>
+												<li>Solution: Created relational database tables with proper foreign keys and validations to keep data consistent.</li>
+											</ol>
+											<li><b>PDF Formatting & Compliance</b></li>
+											<ol>
+												<li>Export authorities required specific layouts for documents, which were difficult to replicate in PDF.</li>
+												<li>Solution: Used TCPDF/FPDF with custom templates and tested documents against real-world compliance standards.</li>
+											</ol>
+											<li><b>Minimizing Manual Errors</b></li>
+											<ol>
+												<li>Export staff were used to manual entry, which often led to mistakes.</li>
+												<li>Solution: Automated field population wherever possible (e.g., pulling buyer/seller details from the database).</li>
+											</ol>
+										</ul>
+									</div>
+									
+									<!-- <div class="col-8 col-8-small">
 										<ul>
 											<h2>Key Features</h2>
 											<li>Commercial Invoice generation</li>
@@ -56,6 +143,7 @@
 											<li>PDF download / print options</li>
 										</ul>
 									</div>
+									
 									<div class="col-4 col-4-small">
 									<ul>
 											<h2>Role</h2>
@@ -65,10 +153,12 @@
 											<li>Document template automation</li>
 											<li>Validation & error handling</li>
 										</ul>
-									</div>
+									</div> -->
+								
 								</div>
 
-								<div class="row">
+								<!-- <div class="row">
+									
 									<div class="col-8 col-8-small">
 										<ul>
 											<h2>Tech Stack</h2>
@@ -76,6 +166,7 @@
 											<li>jQuery, Bootstrap</li>
 										</ul>
 									</div>
+									
 									<div class="col-4 col-4-small">
 										<ul>
 											<h2>Impact / Results</h2>
@@ -84,8 +175,9 @@
 											<li>Enabled easy report generation</li>
 											<li>Increased company efficiency</li>
 										</ul>
+									
 									</div>
-								</div>
+								</div> -->
 								<!-- <h2>About Us</h2>
 								<p>Export Documentation Solutions
 
